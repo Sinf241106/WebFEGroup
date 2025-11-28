@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|d:\\webfegroupppp\\webgroupnhom\\shopnpc\\shopnpc\\shopnpc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|solutionrelative:shopnpc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\shopnpc\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|solutionrelative:shopnpc\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\shopnpc\\views\\home\\landingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|solutionrelative:shopnpc\\views\\home\\landingpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\shopnpc\\views\\home\\comrang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|solutionrelative:shopnpc\\views\\home\\comrang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\shopnpc\\views\\home\\thitnuong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|solutionrelative:shopnpc\\views\\home\\thitnuong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\shopnpc\\views\\home\\monrau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13D50C6C-FE11-4F2C-89CE-DAD7C28F995C}|ShopNPC\\ShopNPC.csproj|solutionrelative:shopnpc\\views\\home\\monrau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LandingPage.cshtml",
+              "DocumentMoniker": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\LandingPage.cshtml",
+              "RelativeDocumentMoniker": "ShopNPC\\Views\\Home\\LandingPage.cshtml",
+              "ToolTip": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\LandingPage.cshtml",
+              "RelativeToolTip": "ShopNPC\\Views\\Home\\LandingPage.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAAgBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T07:42:56.837Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "ShopNPC\\Views\\Home\\SignIn.cshtml",
+              "ToolTip": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\SignIn.cshtml",
+              "RelativeToolTip": "ShopNPC\\Views\\Home\\SignIn.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T01:22:45.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Thitnuong.cshtml",
+              "DocumentMoniker": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\Thitnuong.cshtml",
+              "RelativeDocumentMoniker": "ShopNPC\\Views\\Home\\Thitnuong.cshtml",
+              "ToolTip": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\Thitnuong.cshtml",
+              "RelativeToolTip": "ShopNPC\\Views\\Home\\Thitnuong.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T09:41:07.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Comrang.cshtml",
+              "DocumentMoniker": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\Comrang.cshtml",
+              "RelativeDocumentMoniker": "ShopNPC\\Views\\Home\\Comrang.cshtml",
+              "ToolTip": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\Comrang.cshtml",
+              "RelativeToolTip": "ShopNPC\\Views\\Home\\Comrang.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T14:56:46.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Monrau.cshtml",
+              "DocumentMoniker": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\Monrau.cshtml",
+              "RelativeDocumentMoniker": "ShopNPC\\Views\\Home\\Monrau.cshtml",
+              "ToolTip": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Home\\Monrau.cshtml",
+              "RelativeToolTip": "ShopNPC\\Views\\Home\\Monrau.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T14:56:05.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ShopNPC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\WebFEGroupppp\\WebGroupNhom\\ShopNPC\\ShopNPC\\ShopNPC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ShopNPC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T14:34:34.233Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
