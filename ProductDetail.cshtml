@@ -1,0 +1,212 @@
+﻿@model ShopNPC.Models.Product
+@{
+    ViewBag.Title = "Sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Product.css" rel="stylesheet" />
+
+<div class="khung-trang-san-pham">
+    <div class="khu-vuc-anh">
+        @{ var anhChinh = Model.ImageUrls.FirstOrDefault(); }
+
+        <div class="khung-anh-chinh">
+            <img id="anhChinhSanPham" src="@Url.Content(anhChinh)" alt="@Model.Name" />
+        </div>
+
+        <div class="danh-sach-anh-nho">
+            @foreach (var duongDanAnh in Model.ImageUrls)
+            {
+                <div class="khung-anh-nho">
+                    <img class="anh-nho" src="@Url.Content(duongDanAnh)" alt="Ảnh nhỏ" />
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="thong-tin-chi-tiet">
+        <h1 class="ten-san-pham">@Model.Name</h1>
+        <p class="gia-san-pham">@string.Format("{0:N0}đ", Model.Price)</p>
+
+        <div class="khu-vuc-tuy-chon">
+            <label class="nhan-tuy-chon">Trọng lượng</label>
+            <div class="cac-nut-tuy-chon">
+                @*<button class="nut-tuy-chon dang-chon">@Model.Storage</button>*@
+                @* Dùng vòng lặp để hiển thị tất cả các tùy chọn dung lượng *@
+                @foreach (var dungLuong in Model.Storage)
+                {
+                    <button class="nut-tuy-chon">@dungLuong</button>
+                }
+            </div>
+        </div>
+
+        <div class="khu-vuc-tuy-chon">
+            <label class="nhan-tuy-chon">Loại sốt</label>
+            <div class="cac-nut-tuy-chon">
+                @foreach (var mauSac in Model.Colors)
+                {
+                    <button class="nut-tuy-chon">@mauSac</button>
+                }
+            </div>
+        </div>
+
+        <div class="bo-chon-so-luong">
+            <label class="nhan-tuy-chon">Số lượng</label>
+            <div class="khung-nhap-so-luong">
+                <button class="nut-so-luong">-</button>
+
+                <input type="text" value="1" id="soLuongMua" />
+
+                <button class="nut-so-luong">+</button>
+            </div>
+        </div>
+
+        <div class="cac-nut-hanh-dong">
+
+            <button class="nut nut-them-gio-hang" data-masp="@Model.Id">Thêm vào giỏ hàng</button>
+        </div>
+
+        <div class="cac-nut-hanh-dong">
+            <button class="nut nut-mua-ngay" data-maso="@Model.Id">Mua ngay</button>
+        </div>
+
+        <div class="khuyen-mai">
+            <ul>
+                <li>Tặng kèm kim chi và rau sống miễn phí.</li>
+                <li>Giảm 10% cho Combo 2 người.</li>
+                <li>Miễn phí giao hàng trong bán kính 3km.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <style>
+        /* Thêm style này để làm nổi bật nút được chọn */
+        .nut-tuy-chon.dang-chon {
+            background-color: #007bff !important; /* Dùng !important để đảm bảo nó được ưu tiên */
+            color: white !important;
+            border-color: #007bff !important;
+        }
+    </style>
+
+    <script>
+        // Đảm bảo code chỉ chạy khi trang đã tải xong
+        $(document).ready(function () {
+            console.log("JavaScript cho trang chi tiết đã SẴN SÀNG!"); // Dòng này để kiểm tra
+
+            // --- CODE ĐỂ CHỌN NÚT ---
+            // Bắt sự kiện khi click vào một nút tùy chọn
+            $('.cac-nut-tuy-chon .nut-tuy-chon').on('click', function () {
+                console.log("Đã bấm nút tùy chọn!"); // Dòng này để kiểm tra
+
+                // Xóa class 'dang-chon' khỏi tất cả các nút "anh em"
+                $(this).siblings('.nut-tuy-chon').removeClass('dang-chon');
+
+                // Thêm class 'dang-chon' vào nút vừa được nhấn
+                $(this).addClass('dang-chon');
+            });
+
+
+            // --- CODE THÊM VÀO GIỎ HÀNG (ĐÃ NÂNG CẤP) ---
+            $('.nut-them-gio-hang').on('click', function (e) {
+                e.preventDefault();
+                console.log("Đã bấm nút Thêm vào giỏ!"); // Dòng này để kiểm tra
+
+                var maSanPham = $(this).data('masp');
+                var soLuong = parseInt($('#soLuongMua').val());
+
+                // Lấy text của nút 'Trọng lượng' đang được chọn
+                var trongLuongChon = $('.khu-vuc-tuy-chon:eq(0) .nut-tuy-chon.dang-chon').text();
+                // Lấy text của nút 'Loại sốt' đang được chọn
+                var loaiSotChon = $('.khu-vuc-tuy-chon:eq(1) .nut-tuy-chon.dang-chon').text();
+
+                // Kiểm tra xem người dùng đã chọn chưa
+                if (!trongLuongChon || trongLuongChon.length === 0) {
+                    alert("Vui lòng chọn trọng lượng!");
+                    return;
+                }
+                if (!loaiSotChon || loaiSotChon.length === 0) {
+                    alert("Vui lòng chọn loại sốt!");
+                    return;
+                }
+
+                console.log("Đang gửi lên server:", maSanPham, soLuong, trongLuongChon, loaiSotChon);
+
+                // Gửi yêu cầu lên server
+                $.ajax({
+                    url: '/Home/ThemVaoGio',
+                    type: 'POST',
+                    data: {
+                        maSP: maSanPham,
+                        soLuong: soLuong,
+                        trongLuong: trongLuongChon,
+                        loaiSot: loaiSotChon
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            location.reload();
+                        } else {
+                            // Xử lý nếu server trả về success=false (hiếm khi)
+                            alert("Lỗi từ server: " + (response.message || "Không rõ"));
+                        }
+                    },
+                    error: function () { // Hàm này chạy nếu có lỗi 500
+                        alert("Có lỗi nghiêm trọng xảy ra, không thể thêm sản phẩm!");
+                    }
+                });
+            });
+
+            // --- CODE CỘNG TRỪ SỐ LƯỢNG (GIỮ NGUYÊN) ---
+            $('.nut-so-luong').on('click', function () {
+                var input = $('#soLuongMua');
+                var currentValue = parseInt(input.val());
+                if ($(this).text() === '+') {
+                    input.val(currentValue + 1);
+                } else {
+                    if (currentValue > 1) {
+                        input.val(currentValue - 1);
+                    }
+                }
+            });
+
+            // --- CODE MUA NGAY (CŨNG ĐÃ NÂNG CẤP) ---
+            $('.nut-mua-ngay').on('click', function (e) {
+                e.preventDefault();
+
+                var maSanPham = $(this).data('maso');
+                var soLuong = parseInt($('#soLuongMua').val());
+
+                var trongLuongChon = $('.khu-vuc-tuy-chon:eq(0) .nut-tuy-chon.dang-chon').text();
+                var loaiSotChon = $('.khu-vuc-tuy-chon:eq(1) .nut-tuy-chon.dang-chon').text();
+
+                if (!trongLuongChon || !loaiSotChon) {
+                    alert("Vui lòng chọn trọng lượng và loại sốt!");
+                    return;
+                }
+
+                $.ajax({
+                    url: '/Home/ThemVaoGio',
+                    type: 'POST',
+                    data: {
+                        maSP: maSanPham,
+                        soLuong: soLuong,
+                        trongLuong: trongLuongChon,
+                        loaiSot: loaiSotChon
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            window.location.href = '/Home/XemGioHang';
+                        } else {
+                            alert("Không thể thêm sản phẩm vào giỏ hàng!");
+                        }
+                    },
+                    error: function () {
+                        alert("Có lỗi xảy ra khi thêm sản phẩm!");
+                    }
+                });
+            });
+        });
+    </script>
+}di 
+}

@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Hủ tiếu và mì";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/hutieuvami.css" rel="stylesheet" />
+
+<div>
+    <div class="Bo_Khung_San_Pham">
+        <p class="Bo_Khung_San_Pham_Title">Hủ tiếu và mì </p>
+        <a class="Banner"></a>
+
+        <div class="Danh_Sach_San_Pham">
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 17 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/hutieugo.jpg" />
+                    <p class="TheSanPham_TenThietBi">Hủ tiếu gõ</p>
+                    <p class="TheSanPham_Gia">40.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 18 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/hutieumikho.jpg" />
+                    <p class="TheSanPham_TenThietBi">Hủ tiếu mì khô</p>
+                    <p class="TheSanPham_Gia">90.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 19 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/cach-lam-hu-tieu-xao-chay-tu-hu-tieu-an-lien-202201201403525844.jpg" />
+                    <p class="TheSanPham_TenThietBi">Hủ tiếu xào chay</p>
+                    <p class="TheSanPham_Gia">90.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 20 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/mixaobo.jpg" /> 
+                    <p class="TheSanPham_TenThietBi">mì xào bò</p>
+                    <p class="TheSanPham_Gia">50.000đ</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+

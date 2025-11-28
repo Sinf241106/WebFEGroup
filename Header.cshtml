@@ -1,0 +1,62 @@
+﻿
+<link href="~/Content/Header.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+<header class="header-wrapper">
+    <div class="Header">
+        <a href="/Home/LandingPage" class="Logo"> ShopNPC</a>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="Nav">
+            <ul>
+                <li><a href="/Home/Thitnuong" class="NavText">Thịt nướng</a></li>
+                <li><a href="/Home/Thitxao" class="NavText">Thịt xào</a></li>
+                <li><a href="/Home/Nuocuong" class="NavText">Nước uống</a></li>
+                <li><a href="/Home/Monrau" class="NavText">Món rau</a></li>
+                <li><a href="/Home/Hutieuvami" class="NavText">Hủ tiếu và mì</a></li>
+                <li><a href="/Home/Comrang" class="NavText">Cơm rang</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="Search">
+            <i class="fa-solid fa-magnifying-glass SearchIcon"></i>
+            <input type="text" placeholder="...">
+        </div>
+
+        @*<div>
+            <a href="/Home/XemGioHang">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </a>
+        </div>*@
+
+        
+
+        <div class="gio-hang">
+            <a href="/Home/XemGioHang">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <span class="so-luong-gio">@ViewBag.SoLuongTrongGio</span>
+            </a>
+        </div>
+
+
+
+        <div>
+            <a href="/Home/SignIn">
+                <i class="fa-regular fa-circle-user cart-icon"></i>
+            </a>
+        </div>
+    </div>
+
+</header>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.Nav ul').classList.toggle('show');
+    }
+</script>
+
+

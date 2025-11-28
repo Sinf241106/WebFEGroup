@@ -1,0 +1,275 @@
+﻿@{
+    ViewBag.Title = "ShopNPC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<link href="~/Content/LandingPage.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+<div>
+
+    <a class="Banner" href="/Home/LandingPage"></a>
+
+
+    @* MÓN THỊT NƯỚNG  *@
+    <div class="Bo_Khung_San_Pham" id="thit-nuong">
+        <p class="Bo_Khung_San_Pham_Title">Thịt nướng</p>
+
+        <div class="Danh_Sach_San_Pham">
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 1 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/heo nướng.jpeg" />
+                    <p class="TheSanPham_TenThietBi">Thịt heo nướng</p>
+                    <p class="TheSanPham_Gia">200.000đ</p>
+                </a>
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 2 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/bò nướng.jpg" />
+                    <p class="TheSanPham_TenThietBi">Thịt bò nướng</p>
+                    <p class="TheSanPham_Gia">300.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 3 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/gà nướng.jpg" />
+                    <p class="TheSanPham_TenThietBi">Thịt gà nướng</p>
+                    <p class="TheSanPham_Gia">250.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 4 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/ngongnuong.jpg" />
+                    <p class="TheSanPham_TenThietBi">Thịt ngỗng nướng</p>
+                    <p class="TheSanPham_Gia">500.000đ</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    @* MÓN XÀO  *@
+    <div class="Bo_Khung_San_Pham">
+        <p class="Bo_Khung_San_Pham_Title">Món xào</p>
+
+        <div class="Danh_Sach_San_Pham">
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 5 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/1200nha-1200x676.jpg" />
+                    <p class="TheSanPham_TenThietBi">Bồ câu xào hành</p>
+                    <p class="TheSanPham_Gia">190.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 6 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/cach-lam-thit-ga-xao-bang-chao-chong-dinh-1_b885258c326e4625a7b6a09841b793f3.jpg" />
+                    <p class="TheSanPham_TenThietBi">Thịt heo xào cay</p>
+                    <p class="TheSanPham_Gia">200.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 7 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/BoXaoSaOt1200-1200x675.jpg" />
+                    <p class="TheSanPham_TenThietBi">Bò xào sả ớt</p>
+                    <p class="TheSanPham_Gia">200.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 8 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/cach-lam-thit-ga-xao-bang-chao-chong-dinh-1_b885258c326e4625a7b6a09841b793f3.jpg" />
+                    <p class="TheSanPham_TenThietBi">Thịt gà xào</p>
+                    <p class="TheSanPham_Gia">200.000đ</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    @* NƯỚC UỐNG  *@
+    <div class="Bo_Khung_San_Pham">
+        <p class="Bo_Khung_San_Pham_Title">Nước uống</p>
+
+        <div class="Danh_Sach_San_Pham">
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 9 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/ace2fd39-2fc5-4cc0-9b23-2268b49f3f52.jpg" />
+                    <p class="TheSanPham_TenThietBi">Coca Cola</p>
+                    <p class="TheSanPham_Gia">15.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 10 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/34d667ff916fc434bb52ed1eea615ce0.jpg" />
+                    <p class="TheSanPham_TenThietBi">C2</p>
+                    <p class="TheSanPham_Gia">13.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 11 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/ace2fd39-2fc5-4cc0-9b23-2268b49f3f52.jpg" />
+                    <p class="TheSanPham_TenThietBi">Pepsi</p>
+                    <p class="TheSanPham_Gia">15.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 12 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/67-2.jpg" />
+                    <p class="TheSanPham_TenThietBi">Sting</p>
+                    <p class="TheSanPham_Gia">15.000đ</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    @* RAU XÀO  *@
+    <div class="Bo_Khung_San_Pham">
+        <p class="Bo_Khung_San_Pham_Title">Rau xào</p>
+
+        <div class="Danh_Sach_San_Pham">
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 13 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/raulangxao.jpg" /> <p class="TheSanPham_TenThietBi">Rau lang xào tỏi</p>
+                    <p class="TheSanPham_Gia">190.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 14 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/caingongxaonam.jpg" /> <p class="TheSanPham_TenThietBi">Cải ngồng xào nấm hương</p>
+                    <p class="TheSanPham_Gia">120.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 15 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/dauque.jpg" /> <p class="TheSanPham_TenThietBi">Đậu que xào mè</p>
+                    <p class="TheSanPham_Gia">140.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 16 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/caithia.jpg" /> <p class="TheSanPham_TenThietBi">Cải thìa xào dầu hào</p>
+                    <p class="TheSanPham_Gia">150.000đ</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    @* HỦ TIẾU VÀ MÌ  *@
+    <div class="Bo_Khung_San_Pham">
+        <p class="Bo_Khung_San_Pham_Title">Hủ tiếu và Mì </p>
+
+        <div class="Danh_Sach_San_Pham">
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 17 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/hutieugo.jpg" /> <p class="TheSanPham_TenThietBi">Hủ tiếu gõ</p>
+                    <p class="TheSanPham_Gia">40.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 18 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/hutieumikho.jpg" /> <p class="TheSanPham_TenThietBi">Hủ tiếu mì khô</p>
+                    <p class="TheSanPham_Gia">90.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 19 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/cach-lam-hu-tieu-xao-chay-tu-hu-tieu-an-lien-202201201403525844.jpg" />
+                    <p class="TheSanPham_TenThietBi">Hủ tiếu xào chay</p>
+                    <p class="TheSanPham_Gia">90.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 20 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/mixaobo.jpg" /> <p class="TheSanPham_TenThietBi">Mì xào bò</p>
+                    <p class="TheSanPham_Gia">50.000đ</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    @* CƠM CHIÊN  *@
+    <div class="Bo_Khung_San_Pham">
+        <p class="Bo_Khung_San_Pham_Title">Cơm Rang</p>
+
+        <div class="Danh_Sach_San_Pham">
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 21 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/comrangghe.jpg" /> <p class="TheSanPham_TenThietBi">Cơm rang ghẹ</p>
+                    <p class="TheSanPham_Gia">540.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 22 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/comchienrongbien.jpg" /> <p class="TheSanPham_TenThietBi">Cơm Chiên Rong Biển</p>
+                    <p class="TheSanPham_Gia">190.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 23 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/comchiencahop.jpg" /> <p class="TheSanPham_TenThietBi">Cơm chiên cá hộp</p>
+                    <p class="TheSanPham_Gia">540.000đ</p>
+                </a>
+
+            </div>
+
+            <div class="The_San_Pham">
+                <a href="@Url.Action("ProductDetail", "Home", new { id = 24 })">
+                    <img class="TheSanPham_HinhAnh" src="~/images_LandingPage/comchientrungmuoi.jpg" /> <p class="TheSanPham_TenThietBi">Cơm Chiên Trứng Muối Lạp Xưởng</p>
+                    <p class="TheSanPham_Gia">190.000đ</p>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

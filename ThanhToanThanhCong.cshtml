@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+    var orderId = (TempData["LastOrderId"] as string) ?? (ViewBag.OrderId as string); /*để POST truyền dữ liệu được nhận vô*/
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ThanhToanThanhCong</title>
+    <link href="~/Content/ThanhToanThanhCong.css" rel="stylesheet" />
+    <link rel="preconnect" href="https.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div>
+        <div class="welcome-container">
+
+            <h2 class="welcome-title">Chúc mừng bạn đã <br /> thanh toán đơn hàng thành công</h2>
+
+            <i class="fa-solid fa-circle-check user-icon"></i>
+
+            <div class="user-email">phuc32961@gmial.com</div>
+
+            <p class="welcome-subtitle">
+                Món hàng đang trên đường đến với bạn!<br>
+                Chúng ta cùng mua sắp tiếp ha.
+            </p>
+
+            @* Nút xem chi tiết đơn *@
+            <!--@if (!string.IsNullOrEmpty(orderId))
+            {
+                <a class="complete-button" href="@Url.Action("ChiTietDonHang", "Home", new { id = orderId })">
+                    Xem chi tiết đơn hàng
+                </a>
+            }-->
+
+            <br />
+
+        @*<a href="/home/LandingPage" class="complete-button">
+             Tiếp tục
+        </a>*@
+
+            @*Nút xem lịch sử mua hàng*@
+            <a class="complete-button" style="margin-top:10px;"
+               href="@Url.Action("LichSuMuaHang", "Home")">
+                Xem lịch sử mua hàng
+            </a>
+
+            
+
+        </div>
+    </div>
+</body>
+</html>
